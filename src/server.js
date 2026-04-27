@@ -7,7 +7,7 @@ const path    = require("path");
 const productRoutes = require("./productRoutes");
 
 const app  = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 /** Permite cereri cross-origin */
 app.use(cors());
