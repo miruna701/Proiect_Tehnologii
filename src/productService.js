@@ -4,7 +4,7 @@ const fs   = require("fs");       /**module din Node.js */
 const path = require("path");
 
 /** Calea catre fisierul de date JSON */
-const DATA_FILE = path.join(__dirname, "products.json");
+const DATA_FILE = path.join(__dirname, "../src/products.json");
 
 /** Citeste si parseaza fisierul JSON */
 function readData() {
