@@ -16,14 +16,14 @@ app.use(cors());
 app.use(express.json());
 
 /** Serveste fisierele statice din /public */
-app.use(express.static(path.join(__dirname, "..", "public")));
+app.use(express.static(path.join(__dirname, "../public")));
 
 /** Rutele API pentru produse */
 app.use("/api/products", productRoutes);
 
 /** Pagina principala */
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "public", "index.html"));
+  res.sendFile(path.join(__dirname, "../public/index.html"));
 });
 
 /** Handler erori globale */
